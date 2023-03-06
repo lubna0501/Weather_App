@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="80dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/transparent"
+            app:cardBackgroundColor="@android:color/transparent"
+
+            app:cardCornerRadius="25dp"
+            app:cardElevation="0dp">
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/crad2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/card"
+            android:backgroundTint="@android:color/transparent"
+            app:cardBackgroundColor="@android:color/transparent"
+            app:cardCornerRadius="25dp"
+            app:cardElevation="0dp"
+            android:layout_marginTop="20dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp">
+
+                <RelativeLayout
+                    android:id="@+id/rel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/temp"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="temperature"
+                        android:textColor="@color/black"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:id="@+id/temptext"
+                        android:layout_width="221dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_toRightOf="@id/temp"
+                        android:gravity="end"
+
+                        android:textColor="@color/black"
+                        android:textSize="25dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rel">
+
+                    <TextView
+                        android:id="@+id/texttempfix"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:text="Humidity"
+                        android:textColor="@color/black"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:id="@+id/texttemp"
+                        android:layout_width="221dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_toRightOf="@id/texttempfix"
+                        android:gravity="end"
+
+                        android:textColor="@color/black"
+                        android:textSize="25dp" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/rel3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rel1">
+
+                    <TextView
+                        android:id="@+id/pressure"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:text="pressure"
+                        android:textColor="@color/black"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:id="@+id/textpressure"
+                        android:layout_width="223dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_toRightOf="@id/pressure"
+                        android:gravity="end"
+
+                        android:textColor="@color/black"
+                        android:textSize="25dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rel3">
+
+                    <TextView
+                        android:id="@+id/min"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:text="temp min"
+                        android:textColor="@color/black"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:id="@+id/textmin"
+                        android:layout_width="233dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_toRightOf="@id/min"
+                        android:gravity="end"
+
+                        android:textColor="@color/black"
+                        android:textSize="25dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rel4">
+
+                    <TextView
+                        android:id="@+id/max"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:text="temp min"
+                        android:textColor="@color/black"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:id="@+id/textmax"
+                        android:layout_width="233dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_toRightOf="@id/max"
+                        android:gravity="end"
+                        android:textColor="@color/black"
+                        android:textSize="25dp" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/crad2"-->
+<!--            android:backgroundTint="@android:color/transparent"-->
+<!--            app:cardBackgroundColor="@android:color/transparent"-->
+<!--            app:cardCornerRadius="25dp"-->
+<!--            app:cardElevation="0dp"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            >-->
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_margin="10dp">-->
+<!--                <RelativeLayout-->
+<!--                    android:id="@+id/relative"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content">-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/newyork"-->
+<!--                        android:layout_width="150dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="New York"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textSize="25dp" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/textnewyork"-->
+<!--                        android:layout_width="221dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_centerInParent="true"-->
+<!--                        android:layout_toRightOf="@id/newyork"-->
+<!--                        android:gravity="end"-->
+<!--                        android:text="hello"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textSize="25dp" />-->
+
+<!--                </RelativeLayout>-->
+
+<!--            <RelativeLayout-->
+<!--                android:id="@+id/relative1"-->
+<!--                android:layout_below="@+id/relative"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content">-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/singa"-->
+<!--                    android:layout_width="150dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Singapore"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="25dp" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/textsinga"-->
+<!--                    android:layout_width="221dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_centerInParent="true"-->
+<!--                    android:layout_toRightOf="@id/singa"-->
+<!--                    android:gravity="end"-->
+<!--                    android:text="hello"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="25dp" />-->
+
+<!--            </RelativeLayout>-->
+<!--                <RelativeLayout-->
+<!--                    android:id="@+id/relative2"-->
+<!--                    android:layout_below="@+id/relative1"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content">-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/mumbai"-->
+<!--                        android:layout_width="150dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Mumbai"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textSize="25dp" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/textmumbai"-->
+<!--                        android:layout_width="221dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_centerInParent="true"-->
+<!--                        android:layout_toRightOf="@id/mumbai"-->
+<!--                        android:gravity="end"-->
+<!--                        android:text="hello"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textSize="25dp" />-->
+
+<!--                </RelativeLayout>-->
+<!--                <RelativeLayout-->
+<!--                    android:id="@+id/relative3"-->
+<!--                    android:layout_below="@+id/relative2"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content">-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/delhi"-->
+<!--                        android:layout_width="150dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Delhi"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textSize="25dp" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/textdelhi"-->
+<!--                        android:layout_width="221dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_centerInParent="true"-->
+<!--                        android:layout_toRightOf="@id/delhi"-->
+<!--                        android:gravity="end"-->
+<!--                        android:text="hello"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textSize="25dp" />-->
+
+<!--                </RelativeLayout>-->
+<!--                <RelativeLayout-->
+<!--                    android:id="@+id/relative4"-->
+<!--                    android:layout_below="@+id/relative3"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content">-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/sydney"-->
+<!--                        android:layout_width="150dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Sydney"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textSize="25dp" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/textsydney"-->
+<!--                        android:layout_width="221dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_centerInParent="true"-->
+<!--                        android:layout_toRightOf="@id/sydney"-->
+<!--                        android:gravity="end"-->
+<!--                        android:text="hello"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textSize="25dp" />-->
+
+<!--                </RelativeLayout>-->
+<!--                <RelativeLayout-->
+<!--                    android:id="@+id/relative5"-->
+<!--                    android:layout_below="@+id/relative4"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content">-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/melbourne"-->
+<!--                        android:layout_width="150dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Melbourne"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textSize="25dp" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/textmelbourne"-->
+<!--                        android:layout_width="221dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_centerInParent="true"-->
+<!--                        android:layout_toRightOf="@id/melbourne"-->
+<!--                        android:gravity="end"-->
+<!--                        android:text="hello"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textSize="25dp" />-->
+
+<!--                </RelativeLayout>-->
+<!--            </RelativeLayout>-->
+
+<!--        </androidx.cardview.widget.CardView>-->
+    </RelativeLayout>
+</RelativeLayout>
